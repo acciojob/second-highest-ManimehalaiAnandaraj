@@ -19,19 +19,17 @@
 				
 			}
 			for (let i = 0; i < n; i++)
-				{
-					
-					
+				{		
 		        if (arr[i] > large) 
             large = arr[i];
- secondLargest = largest;
-            largest = arr[i];
-        } else if (arr[i] > secondLargest && arr[i] < largest) {
-            secondLargest = arr[i];
+ secLargest = large;
+            large = arr[i];
+        } else if (arr[i] > secLargest && arr[i] < large) {
+            secLargest = arr[i];
         }
     }
-    if (secondLargest == -Infinity) return -Infinity;
-    return secondLargest;
+    if (secLargest == -Infinity) return -Infinity;
+    return secLargest;
 }
 
 		function Main() {
