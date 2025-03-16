@@ -10,19 +10,18 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			function seconghigh(arr)
-	{
-		If(arr===0 || arr.length<=1)
-	{
-		return;
-	}
-		let uniarr=[…new Set(arr)];
-		Uniarr.sort((arr[i],arr[i+1]) => arr[i+1]-arr[i]);
-		return uniarr[1];
+			arr.sort((a, b) => a - b);
+			 for (let i = n - 2; i >= 0; i--)
+				 {
+				if (arr[i] !== arr[n - 1])
+				{
+            return arr[i];
+			 }	 
+				
+			}
+			    return -1;
 		}
-
-			
-		}
+		console.log(secondHighest(arr));
 
 		function Main() {
 			var n = prompt("Enter the number of elements");
