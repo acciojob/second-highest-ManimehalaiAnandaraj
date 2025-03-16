@@ -22,13 +22,18 @@
 				{		
 		        if (arr[i] > large) 
             large = arr[i];
- secLargest = large;
+			 secLargest = large;
             large = arr[i];
-        } else if (arr[i] > secLargest && arr[i] < large) {
+        } 
+			else if (arr[i] > secLargest && arr[i] < large)
+			{
             secLargest = arr[i];
         }
     }
-    if (secLargest == -Infinity) return -Infinity;
+    if (secLargest == -Infinity) 
+	{
+		return -Infinity;
+	}
     return secLargest;
 }
 
