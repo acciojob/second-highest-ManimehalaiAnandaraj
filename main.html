@@ -10,19 +10,19 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-          let largest = -1, secondLargest = -1;
+          let large = -1, secLargest = -1;
 			for (let i = 0; i < n; i++)
 				{
-		        if (arr[i] > largest)
-            largest = arr[i];
+		        if (arr[i] > large)
+            large = arr[i];
     }
 			for (let i = 0; i < n; i++) {
-			if (arr[i] > secondLargest && arr[i] !== largest) {
-            secondLargest = arr[i];
+			if (arr[i] > secLargest && arr[i] !== large) {
+            secLargest = arr[i];
 
 				
 			}
-			    return secondLargest;
+			    return secLargest;
 		}
 
 		function Main() {
