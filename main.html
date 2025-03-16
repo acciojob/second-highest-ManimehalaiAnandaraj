@@ -5,13 +5,13 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>	
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
 			let n=arr.length;
           let large =-Infinity, secLargest = -Infinity;
+			if(n>10^5)
 			if(n<2)
 			{
 				return -Infinity;	
@@ -32,7 +32,7 @@
 	{
 		return -Infinity;
 	}
-				}
+				}}
     return secLargest;
 }
 
