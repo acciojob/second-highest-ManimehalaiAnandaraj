@@ -10,6 +10,17 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			function seconghigh(arr)
+	{
+		If(arr===0 || arr.length<=1)
+	{
+		return;
+	}
+		let uniarr=[…new Set(arr)];
+		Uniarr.sort((arr[i],arr[i+1]) => arr[i+1]-arr[i]);
+		return uniarr[1];
+		}
+
 			
 		}
 
