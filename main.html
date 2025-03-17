@@ -12,14 +12,12 @@
 			let n=arr.length;
           let large =-Infinity, secLargest = -Infinity;
 			
-			if(n> 10** 5)
+			if(n<2)
 				
-		
 			{
-				if(n==0 || n==1)
-				{
+			
 				return -Infinity;	
-			}
+			
 			}
 			
 			for (let i = 0; i < n; i++)
@@ -34,10 +32,7 @@
 			{
             secLargest = arr[i];
         }
-   else
-	{
-		return -Infinity;
-	}
+  
 				}
     return secLargest;
 }
